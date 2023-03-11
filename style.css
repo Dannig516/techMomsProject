@@ -18,7 +18,7 @@ header {
         flex-direction: row;
         align-items: center;
         justify-content: space-between;
-        padding-top: 20px;
+        padding-top: 10px;
         margin-left: 2%;
         margin-right: 2%;
 }
@@ -50,33 +50,40 @@ main {
 .main-content {
     display: flex;
     flex-direction: column;
+    width: 50%;
+    padding-left: 15px;
 }
 
-#moms-image {
-    max-width: 100%;
+.redpark {
+    max-width: min-content; 
     object-fit: cover; 
+    size: 50%
+    ;
 }
 
 aside {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-left: 10px;
+    padding-left: 30px;
     background-color:black;
+    color: red;
 }
 
 .sidebar-accent {
     text-transform: uppercase;
-    font-size: 1rem;
-    color: #333;
+    align-items: center;
+    font-size: 2rem;
+    color: red;
     width: 85%;
 }
 
 .sidebar-title {
     font-size: 1.2rem;
     font-size: bold;
+    align-items: baseline;
     width: 85%;
-    border-bottom: 4px solid black;
+    border-bottom: 4px solid red;
 }
 
 .sidebar-btn {
@@ -84,8 +91,8 @@ aside {
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-    background-color: #C7647B;
-    color: #ffffff;
+    background-color: red;
+    color: black;
     width: 200px;
     height: 60px;
     font-size: 18px;
@@ -93,6 +100,16 @@ aside {
     padding-left: 30px;
     margin: 20px 0;
 }
+
+/*about page*/
+
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+
+}
+
 
 /* footer -- bottom of my page */
 
@@ -107,7 +124,7 @@ footer {
 }
 
 .square {
-    margin-right:;
+    
     color:blue;
     font-size: 30px;
 }
@@ -117,5 +134,7 @@ footer {
 }
 
 div {
-    color: red;
+    color: blue;
+    
+    
 }
